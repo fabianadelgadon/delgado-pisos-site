@@ -1,0 +1,25 @@
+# Arquivo robots.txt para delgadopisos.com.br
+User-agent: *
+Allow: /
+
+# Permitir acesso ao sitemap
+Sitemap: https://delgadopisos.com.br/sitemap.xml
+
+# Evitar rastreamento de URLs duplicadas ou desnecessárias
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /*?*
+
+# Instruções específicas para bots principais
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 1

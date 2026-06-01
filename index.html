@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TJ6VL8B2');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delgado Pisos — Especialistas em Pisos Laminados, Vinílicos e Persianas em São Paulo</title>
+  <meta name="description" content="Venda e instalação de pisos laminados, vinílicos, rodapés, revestimentos e persianas em São Paulo. Marcas Durafloor e Eucafloor. Orçamento em até 30 minutos." />
+  <meta name="keywords" content="pisos laminados, pisos vinílicos, persianas, instalação de piso, revestimentos, rodapés, Delgado Pisos, São Paulo, Durafloor, Eucafloor, piso SP, piso barato, piso qualidade" />
+  <meta name="author" content="Delgado Pisos" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://delgadopisos.com.br/" />
+  <link rel="sitemap" type="application/xml" href="https://delgadopisos.com.br/sitemap.xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Delgado Pisos — Especialistas em Pisos e Persianas em SP" />
+  <meta property="og:description" content="Venda e instalação de pisos laminados, vinílicos e persianas em todo o Estado de São Paulo. Orçamento grátis em 30 minutos." />
+  <meta property="og:image" content="https://delgadopisos.com.br/logo-delgado.jpeg" />
+  <meta property="og:url" content="https://delgadopisos.com.br/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Delgado Pisos — Pisos e Persianas em SP" />
+  <meta name="twitter:description" content="Venda e instalação de pisos laminados, vinílicos e persianas em São Paulo." />
+  <meta name="twitter:image" content="https://delgadopisos.com.br/logo-delgado.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── TOKENS ─────────────────────────────────── */
+    :root {
+      --black:   #090909;
+      --black2:  #111111;
+      --black3:  #191919;
+      --yellow:  #F5C400;
+      --yellow2: #FFD700;
+      --white:   #F2F2EE;
+      --grey:    #777;
+      --fd: 'Bebas Neue', sans-serif;
+      --fb: 'Outfit', sans-serif;
+      --ease: cubic-bezier(.4,0,.2,1);
+      --t: .32s;
+      --r: 3px;
+    }
+
+    /* ── RESET ──────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { background: var(--black); color: var(--white); font-family: var(--fb); overflow-x: hidden; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
+    ::-webkit-scrollbar { width: 3px; }
+    ::-webkit-scrollbar-track { background: var(--black); }
+    ::-webkit-scrollbar-thumb { background: var(--yellow); }
+
+    /* ── NAVBAR ─────────────────────────────────── */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      height: 70px;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw;
+      background: rgba(9,9,9,.93);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(245,196,0,.1);
+      transition: background var(--t) var(--ease);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; }
+    .nav-logo img { height: 44px; width: auto; object-fit: contain; filter: brightness(1); }
+    .nav-links { display: flex; align-items: center; gap: 28px; }
+    .nav-links a {
+      font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+      color: rgba(242,242,238,.55);
+      transition: color var(--t);
+      position: relative;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -3px; left: 0;
+      width: 0; height: 1px; background: var(--yellow);
+      transition: width var(--t) var(--ease);
+    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      background: var(--yellow) !important; color: var(--black) !important;
+      padding: 9px 22px; border-radius: var(--r);
+      font-weight: 700 !important; font-size: .78rem !important;
+    }
+    .nav-cta::after { display: none !important; }
+    .nav-cta:hover { background: var(--yellow2) !important; }
+
+    /* hamburger */
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: var(--t); }
+    .mob-nav {
+      position: fixed; top: 70px; inset: 70px 0 0 0;
+      background: rgba(9,9,9,.98); backdrop-filter: blur(24px);
+      z-index: 190; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 32px;
+      transform: translateX(100%); transition: transform .38s var(--ease);
+    }
+    .mob-nav.open { transform: translateX(0); }
+    .mob-nav a { font-family: var(--fd); font-size: 2.2rem; letter-spacing: .06em; color: rgba(242,242,238,.45); transition: color var(--t); }
+    .mob-nav a:hover { color: var(--yellow); }
+
+    /* ── BTN ─────────────────────────────────────── */
+    .btn-y {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--yellow); color: var(--black);
+      font-weight: 700; font-size: .83rem; letter-spacing: .09em; text-transform: uppercase;
+      padding: 15px 32px; border-radius: var(--r);
+      border: 2px solid var(--yellow); transition: var(--t) var(--ease);
+    }
+    .btn-y:hover { background: transparent; color: var(--yellow); transform: translateY(-2px); }
+    .btn-o {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: transparent; color: var(--white);
+      font-weight: 500; font-size: .83rem; letter-spacing: .09em; text-transform: uppercase;
+      padding: 15px 32px; border-radius: var(--r);
+      border: 1px solid rgba(242,242,238,.18); transition: var(--t) var(--ease);
+    }
+    .btn-o:hover { border-color: var(--yellow); color: var(--yellow); transform: translateY(-2px); }
+
+    /* ── SECTION SHARED ─────────────────────────── */
+    .sec { padding: 96px 5vw; }
+    .sec-label {
+      display: flex; align-items: center; gap: 12px;
+      font-size: .7rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
+      color: var(--yellow); margin-bottom: 14px;
+    }
+    .sec-label::before { content: ''; display: block; width: 28px; height: 1px; background: var(--yellow); }
+    .sec-title { font-family: var(--fd); font-size: clamp(2.4rem,4.5vw,3.8rem); line-height: 1; letter-spacing: .03em; margin-bottom: 20px; }
+    .sec-desc { font-size: .95rem; color: rgba(242,242,238,.5); max-width: 520px; line-height: 1.8; }
+
+    /* reveal */
+    .r { opacity: 0; transform: translateY(28px); transition: opacity .65s var(--ease), transform .65s var(--ease); }
+    .r.on { opacity: 1; transform: none; }
+
+    /* ── HERO ────────────────────────────────────── */
+    #hero {
+      min-height: 100vh; position: relative; overflow: hidden;
+      display: flex; align-items: center;
+      padding: 110px 5vw 80px;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('hero-image.jpg');
+      background-size: cover; background-position: center;
+    }
+    .hero-bg::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(100deg, rgba(9,9,9,.95) 0%, rgba(9,9,9,.85) 50%, rgba(9,9,9,.4) 100%);
+    }
+    .hero-inner { position: relative; z-index: 2; max-width: 680px; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(245,196,0,.1); border: 1px solid rgba(245,196,0,.28);
+      border-radius: 100px; padding: 6px 16px;
+      font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--yellow); margin-bottom: 28px;
+      animation: fu .8s ease both;
+    }
+    .hero-badge .dot { width: 6px; height: 6px; background: var(--yellow); border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(1.5)} }
+    .hero-h1 {
+      font-family: var(--fd); font-size: clamp(3.6rem,9vw,7.8rem);
+      line-height: .9; letter-spacing: .02em; margin-bottom: 22px;
+      animation: fu .8s .1s ease both;
+    }
+    .hero-h1 .acc { color: var(--yellow); }
+    .hero-h1 .dim { color: rgba(242,242,238,.18); display: block; }
+    .hero-p {
+      font-size: 1rem; font-weight: 300; color: rgba(242,242,238,.6);
+      max-width: 480px; line-height: 1.75; margin-bottom: 36px;
+      animation: fu .8s .2s ease both;
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; animation: fu .8s .3s ease both; }
+    .hero-stats {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      display: flex; background: rgba(9,9,9,.85); backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(245,196,0,.1);
+      z-index: 3;
+    }
+    .hstat {
+      flex: 1; padding: 22px 5vw; border-right: 1px solid rgba(245,196,0,.08);
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .hstat:last-child { border-right: none; }
+    .hstat-n { font-family: var(--fd); font-size: 2.2rem; color: var(--yellow); line-height: 1; }
+    .hstat-l { font-size: .7rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: rgba(242,242,238,.35); margin-top: 3px; text-align: center; }
+    @keyframes fu { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:none} }
+
+    /* ── MARQUEE ─────────────────────────────────── */
+    .marquee-wrap {
+      overflow: hidden; background: var(--black2);
+      border-top: 1px solid rgba(245,196,0,.08);
+      border-bottom: 1px solid rgba(245,196,0,.08);
+      padding: 15px 0;
+    }
+    .mq-track { display: flex; gap: 40px; animation: mq 22s linear infinite; white-space: nowrap; }
+    .mq-item {
+      display: flex; align-items: center; gap: 12px; flex-shrink: 0;
+      font-family: var(--fd); font-size: .92rem; letter-spacing: .16em;
+      color: rgba(242,242,238,.28);
+    }
+    .mq-item .dot { width: 5px; height: 5px; background: var(--yellow); border-radius: 50%; }
+    @keyframes mq { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+    /* ── SOBRE ───────────────────────────────────── */
+    #sobre { background: var(--black2); }
+    .sobre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .sobre-features { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 40px; }
+    .sf {
+      background: var(--black3); padding: 24px 20px;
+      position: relative; overflow: hidden; transition: var(--t);
+    }
+    .sf::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--yellow); transition: width var(--t) var(--ease); }
+    .sf:hover::after { width: 100%; }
+    .sf:hover { background: rgba(245,196,0,.04); }
+    .sf-icon { font-size: 1.4rem; margin-bottom: 10px; }
+    .sf-title { font-weight: 700; font-size: .88rem; margin-bottom: 4px; }
+    .sf-desc { font-size: .78rem; color: rgba(242,242,238,.4); line-height: 1.55; }
+
+    .sobre-card {
+      background: var(--black3); border: 1px solid rgba(242,242,238,.05);
+      padding: 44px 36px; position: relative;
+    }
+    .sobre-card::before { content: ''; position: absolute; top: 0; left: 0; width: 56px; height: 3px; background: var(--yellow); }
+    .sobre-logo-wrap { margin-bottom: 28px; }
+    .sobre-logo-wrap img { max-height: 60px; width: auto; filter: brightness(0) invert(1); }
+    .sobre-mission { font-family: var(--fd); font-size: 1.5rem; line-height: 1.2; letter-spacing: .04em; margin-bottom: 20px; }
+    .sobre-mission span { color: var(--yellow); }
+    .sobre-text { font-size: .88rem; color: rgba(242,242,238,.48); line-height: 1.8; margin-bottom: 28px; }
+    .sobre-brands { padding-top: 24px; border-top: 1px solid rgba(242,242,238,.06); }
+    .brands-lbl { font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: rgba(242,242,238,.28); margin-bottom: 12px; }
+    .brands-row { display: flex; gap: 12px; }
+    .brand-tag { background: rgba(245,196,0,.08); border: 1px solid rgba(245,196,0,.2); color: var(--yellow); font-weight: 700; font-size: .78rem; letter-spacing: .1em; padding: 7px 16px; border-radius: 2px; }
+
+    /* ── PRODUTOS ────────────────────────────────── */
+    #produtos { background: var(--black); }
+    .prod-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 56px; flex-wrap: wrap; gap: 24px; }
+    .prod-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+
+    .prod-card {
+      background: var(--black2); position: relative; overflow: hidden;
+      transition: transform var(--t) var(--ease);
+    }
+    .prod-card:hover { transform: translateY(-4px); }
+    .prod-img { width: 100%; height: 220px; object-fit: cover; filter: brightness(.8); transition: filter var(--t), transform var(--t); }
+    .prod-card:hover .prod-img { filter: brightness(.95); transform: scale(1.03); }
+    .prod-img-wrap { overflow: hidden; position: relative; }
+    .prod-num {
+      position: absolute; top: 12px; left: 14px;
+      font-family: var(--fd); font-size: .9rem; letter-spacing: .12em;
+      background: rgba(9,9,9,.7); color: var(--yellow);
+      padding: 3px 10px; border-radius: 2px; z-index: 2;
+    }
+    .prod-body { padding: 28px 26px 32px; }
+    .prod-title { font-family: var(--fd); font-size: 1.7rem; letter-spacing: .04em; margin-bottom: 10px; }
+    .prod-desc { font-size: .83rem; color: rgba(242,242,238,.48); line-height: 1.72; margin-bottom: 20px; }
+    .prod-feats { display: flex; flex-direction: column; gap: 6px; margin-bottom: 24px; }
+    .prod-feat { display: flex; align-items: center; gap: 8px; font-size: .76rem; color: rgba(242,242,238,.38); }
+    .prod-feat::before { content: ''; width: 14px; height: 1px; background: var(--yellow); flex-shrink: 0; }
+    .prod-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: .76rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--yellow); opacity: 0; transform: translateY(6px); transition: var(--t);
+    }
+    .prod-card:hover .prod-link { opacity: 1; transform: none; }
+
+    /* card especial CTA */
+    .prod-card-cta {
+      background: rgba(245,196,0,.05); border: 1px solid rgba(245,196,0,.18);
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 40px 32px;
+    }
+    .prod-card-cta .prod-title { color: var(--yellow); }
+    .prod-card-cta .prod-desc { color: rgba(242,242,238,.45); }
+
+    /* ── PERSIANAS GALERIA ───────────────────────── */
+    #persianas-galeria { background: var(--black2); }
+    .pgs-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; flex-wrap: wrap; gap: 20px; }
+    .pgs-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; }
+    .pgs-item { overflow: hidden; position: relative; aspect-ratio: 3/4; }
+    .pgs-item img { width: 100%; height: 100%; object-fit: cover; filter: brightness(.75); transition: filter var(--t), transform .5s var(--ease); }
+    .pgs-item:hover img { filter: brightness(1); transform: scale(1.05); }
+    .pgs-item::after {
+      content: attr(data-label); position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 24px 14px 14px;
+      background: linear-gradient(to top, rgba(9,9,9,.9) 0%, transparent 100%);
+      font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+      color: rgba(242,242,238,.7);
+    }
+
+    /* ── FAQ ─────────────────────────────────────── */
+    #faq { background: var(--black); }
+    .faq-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 48px; }
+    .faq-item { background: var(--black2); padding: 28px 26px; cursor: pointer; transition: background var(--t); }
+    .faq-item.open { background: rgba(245,196,0,.05); }
+    .faq-q { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; }
+    .faq-qt { font-weight: 600; font-size: .92rem; line-height: 1.4; }
+    .faq-ic {
+      width: 26px; height: 26px; flex-shrink: 0; border: 1px solid rgba(242,242,238,.14);
+      display: flex; align-items: center; justify-content: center;
+      font-size: .95rem; color: var(--yellow); transition: var(--t);
+    }
+    .faq-item.open .faq-ic { background: var(--yellow); color: var(--black); border-color: var(--yellow); transform: rotate(45deg); }
+    .faq-a { font-size: .83rem; color: rgba(242,242,238,.48); line-height: 1.75; max-height: 0; overflow: hidden; transition: max-height .4s ease, padding .3s; }
+    .faq-item.open .faq-a { max-height: 300px; padding-top: 14px; }
+
+    /* ── REGIÕES ─────────────────────────────────── */
+    #regioes { background: var(--black2); text-align: center; }
+    #regioes .sec-label { justify-content: center; }
+    #regioes .sec-label::before { display: none; }
+    .cidades { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 860px; margin: 40px auto 40px; }
+    .cidade { background: var(--black3); border: 1px solid rgba(242,242,238,.07); padding: 7px 16px; font-size: .78rem; font-weight: 500; letter-spacing: .05em; border-radius: 2px; color: rgba(242,242,238,.5); transition: var(--t); }
+    .cidade:hover, .cidade.hl { border-color: rgba(245,196,0,.28); color: var(--yellow); }
+
+    /* ── DEPOIMENTOS ─────────────────────────────── */
+    #depoimentos { background: var(--black); }
+    .dep-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 48px; }
+    .dep-card { background: var(--black2); padding: 36px 28px; position: relative; transition: var(--t); }
+    .dep-card:hover { background: rgba(245,196,0,.04); }
+    .dep-card::before { content: '"'; font-family: var(--fd); font-size: 5.5rem; color: rgba(245,196,0,.08); position: absolute; top: 6px; right: 22px; line-height: 1; }
+    .dep-stars { display: flex; gap: 3px; margin-bottom: 16px; }
+    .dep-stars span { color: var(--yellow); font-size: .8rem; }
+    .dep-stars span.e { color: rgba(245,196,0,.2); }
+    .dep-text { font-size: .87rem; font-style: italic; color: rgba(242,242,238,.6); line-height: 1.75; margin-bottom: 24px; }
+    .dep-author { display: flex; align-items: center; gap: 12px; border-top: 1px solid rgba(242,242,238,.06); padding-top: 18px; }
+    .dep-av { width: 38px; height: 38px; background: var(--yellow); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: .8rem; color: var(--black); flex-shrink: 0; }
+    .dep-name { font-weight: 700; font-size: .88rem; }
+    .dep-date { font-size: .72rem; color: rgba(242,242,238,.28); }
+
+    /* ── CONTATO ─────────────────────────────────── */
+    #contato { background: var(--black2); position: relative; overflow: hidden; }
+    #contato::before { content: ''; position: absolute; right: -10%; top: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(245,196,0,.04) 0%, transparent 70%); pointer-events: none; }
+    .contato-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 72px; align-items: start; }
+    .contato-channels { display: flex; flex-direction: column; gap: 2px; margin-top: 40px; }
+    .ch {
+      display: flex; align-items: center; gap: 18px;
+      background: var(--black3); padding: 20px 24px;
+      transition: var(--t);
+    }
+    .ch:hover { background: rgba(245,196,0,.05); }
+    .ch-icon { width: 42px; height: 42px; background: rgba(245,196,0,.1); border: 1px solid rgba(245,196,0,.2); display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0; }
+    .ch-lbl { font-size: .68rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: rgba(242,242,238,.28); margin-bottom: 1px; }
+    .ch-val { font-weight: 600; font-size: .92rem; }
+
+    /* form */
+    .form-wrap { background: var(--black3); border: 1px solid rgba(242,242,238,.05); padding: 44px 36px; position: relative; }
+    .form-wrap::before { content: ''; position: absolute; top: 0; right: 0; width: 56px; height: 3px; background: var(--yellow); }
+    .form-title { font-family: var(--fd); font-size: 1.7rem; letter-spacing: .04em; margin-bottom: 6px; }
+    .form-sub { font-size: .82rem; color: rgba(242,242,238,.38); margin-bottom: 30px; }
+    .frow { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .fg { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+    .fg.full { grid-column: 1/-1; }
+    .fg label { font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(242,242,238,.35); }
+    .fg input, .fg select, .fg textarea {
+      background: var(--black2); border: 1px solid rgba(242,242,238,.07);
+      color: var(--white); font-family: var(--fb); font-size: .88rem;
+      padding: 13px 15px; border-radius: var(--r); outline: none; width: 100%;
+      transition: border-color var(--t);
+    }
+    .fg input:focus, .fg select:focus, .fg textarea:focus { border-color: rgba(245,196,0,.45); }
+    .fg select option { background: var(--black2); }
+    .fg textarea { resize: vertical; min-height: 90px; }
+    .form-btn {
+      width: 100%; background: var(--yellow); color: var(--black);
+      border: 2px solid var(--yellow); font-family: var(--fb);
+      font-weight: 700; font-size: .83rem; letter-spacing: .1em; text-transform: uppercase;
+      padding: 17px; cursor: pointer; border-radius: var(--r);
+      transition: var(--t); margin-top: 6px;
+    }
+    .form-btn:hover { background: transparent; color: var(--yellow); }
+    .form-note { font-size: .7rem; color: rgba(242,242,238,.22); text-align: center; margin-top: 10px; }
+
+    /* ── WA FLOAT ────────────────────────────────── */
+    .wa-float {
+      position: fixed; bottom: 28px; right: 28px; z-index: 300;
+      display: flex; align-items: center; gap: 10px;
+      background: #25d366; color: #fff;
+      font-weight: 700; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase;
+      padding: 13px 22px 13px 16px; border-radius: 100px;
+      box-shadow: 0 8px 30px rgba(37,211,102,.35);
+      transition: var(--t); text-decoration: none;
+    }
+    .wa-float:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(37,211,102,.5); }
+    .wa-float svg { width: 18px; height: 18px; fill: #fff; }
+
+    /* ── FOOTER ──────────────────────────────────── */
+    footer {
+      background: var(--black2); border-top: 1px solid rgba(245,196,0,.1);
+      padding: 56px 5vw 28px;
+    }
+    .ft-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .ft-logo img { max-height: 50px; width: auto; filter: brightness(0) invert(1); margin-bottom: 14px; }
+    .ft-desc { font-size: .83rem; color: rgba(242,242,238,.32); line-height: 1.75; max-width: 280px; }
+    .ft-social { display: flex; gap: 8px; margin-top: 22px; }
+    .ft-soc {
+      width: 34px; height: 34px; border: 1px solid rgba(242,242,238,.1);
+      display: flex; align-items: center; justify-content: center;
+      font-size: .78rem; font-weight: 700; color: rgba(242,242,238,.45);
+      transition: var(--t); text-decoration: none;
+    }
+    .ft-soc:hover { background: var(--yellow); border-color: var(--yellow); color: var(--black); }
+    .ft-col-title { font-size: .68rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: rgba(242,242,238,.28); margin-bottom: 18px; }
+    .ft-links { display: flex; flex-direction: column; gap: 10px; }
+    .ft-links a { font-size: .83rem; color: rgba(242,242,238,.4); transition: color var(--t); }
+    .ft-links a:hover { color: var(--yellow); }
+    .ft-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; padding-top: 24px; border-top: 1px solid rgba(242,242,238,.05); }
+    .ft-copy { font-size: .72rem; color: rgba(242,242,238,.2); }
+    .ft-copy a { color: rgba(245,196,0,.4); }
+    .ft-copy a:hover { color: var(--yellow); }
+
+    /* ── RESPONSIVE ──────────────────────────────── */
+    @media (max-width: 1100px) {
+      .prod-grid { grid-template-columns: 1fr 1fr; }
+      .pgs-grid { grid-template-columns: repeat(3, 1fr); }
+      .sobre-grid { grid-template-columns: 1fr; gap: 48px; }
+      .contato-grid { grid-template-columns: 1fr; gap: 48px; }
+      .ft-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      #nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .sec { padding: 64px 20px; }
+      .hero-h1 { font-size: clamp(3rem, 14vw, 5rem); }
+      .hero-stats { position: static; margin-top: 48px; flex-wrap: wrap; }
+      .hstat { flex: 1 1 48%; border-right: none; border-bottom: 1px solid rgba(245,196,0,.08); }
+      .prod-grid { grid-template-columns: 1fr; }
+      .faq-wrap { grid-template-columns: 1fr; }
+      .dep-grid { grid-template-columns: 1fr; }
+      .pgs-grid { grid-template-columns: 1fr 1fr; }
+      .ft-grid { grid-template-columns: 1fr; gap: 32px; }
+      .frow { grid-template-columns: 1fr; }
+      .sobre-features { grid-template-columns: 1fr; }
+      .wa-float { bottom: 16px; right: 16px; padding: 12px 18px 12px 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ6VL8B2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- NAVBAR -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <img src="logo-delgado.jpeg" alt="Delgado Pisos" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Empresa</a></li>
+    <li><a href="#produtos">Produtos</a></li>
+    <li><a href="#persianas-galeria">Persianas</a></li>
+    <li><a href="#faq">Dúvidas</a></li>
+    <li><a href="#regioes">Regiões</a></li>
+    <li><a href="#depoimentos">Clientes</a></li>
+    <li><a href="https://wa.me/5511958096136?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" class="nav-cta">Orçamento Grátis</a></li>
+  </ul>
+  <div class="hamburger" id="hbg" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobNav">
+  <a href="#sobre" onclick="toggleMenu()">Empresa</a>
+  <a href="#produtos" onclick="toggleMenu()">Produtos</a>
+  <a href="#persianas-galeria" onclick="toggleMenu()">Persianas</a>
+  <a href="#faq" onclick="toggleMenu()">Dúvidas</a>
+  <a href="#regioes" onclick="toggleMenu()">Regiões</a>
+  <a href="#depoimentos" onclick="toggleMenu()">Clientes</a>
+  <a href="#contato" onclick="toggleMenu()">Contato</a>
+  <a href="https://wa.me/5511958096136" target="_blank" style="color:var(--yellow)">WhatsApp</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-badge"><span class="dot"></span> Especialistas em São Paulo</div>
+    <h1 class="hero-h1">
+      TRANSFORME<br>
+      SEU <span class="acc">AMBIENTE</span>
+      <span class="dim">COM QUEM ENTENDE</span>
+    </h1>
+    <p class="hero-p">Venda e instalação de pisos laminados, vinílicos, rodapés, revestimentos e persianas. Atendemos todo o Estado de SP com orçamento em até 30 minutos.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/5511958096136?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20pela%20Delgado%20Pisos." target="_blank" class="btn-y">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Solicitar Orçamento
+      </a>
+      <a href="#produtos" class="btn-o">Ver Produtos →</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hstat"><span class="hstat-n">30 min</span><span class="hstat-l">Resposta ao orçamento</span></div>
+    <div class="hstat"><span class="hstat-n">100%</span><span class="hstat-l">Estado de São Paulo</span></div>
+    <div class="hstat"><span class="hstat-n">4.8 ★</span><span class="hstat-l">Avaliação média</span></div>
+    <div class="hstat"><span class="hstat-n">1–2 dias</span><span class="hstat-l">Prazo de instalação</span></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="mq-track">
+    <span class="mq-item"><span class="dot"></span>PISO LAMINADO</span>
+    <span class="mq-item"><span class="dot"></span>PISO VINÍLICO</span>
+    <span class="mq-item"><span class="dot"></span>PERSIANAS</span>
+    <span class="mq-item"><span class="dot"></span>RODAPÉS</span>
+    <span class="mq-item"><span class="dot"></span>REVESTIMENTOS</span>
+    <span class="mq-item"><span class="dot"></span>DURAFLOOR</span>
+    <span class="mq-item"><span class="dot"></span>EUCAFLOOR</span>
+    <span class="mq-item"><span class="dot"></span>INSTALAÇÃO PROFISSIONAL</span>
+    <span class="mq-item"><span class="dot"></span>TODO O ESTADO DE SP</span>
+    <span class="mq-item"><span class="dot"></span>ORÇAMENTO EM 30 MIN</span>
+    <span class="mq-item"><span class="dot"></span>PISO LAMINADO</span>
+    <span class="mq-item"><span class="dot"></span>PISO VINÍLICO</span>
+    <span class="mq-item"><span class="dot"></span>PERSIANAS</span>
+    <span class="mq-item"><span class="dot"></span>RODAPÉS</span>
+    <span class="mq-item"><span class="dot"></span>REVESTIMENTOS</span>
+    <span class="mq-item"><span class="dot"></span>DURAFLOOR</span>
+    <span class="mq-item"><span class="dot"></span>EUCAFLOOR</span>
+    <span class="mq-item"><span class="dot"></span>INSTALAÇÃO PROFISSIONAL</span>
+    <span class="mq-item"><span class="dot"></span>TODO O ESTADO DE SP</span>
+    <span class="mq-item"><span class="dot"></span>ORÇAMENTO EM 30 MIN</span>
+  </div>
+</div>
+
+<!-- SOBRE -->
+<section id="sobre" class="sec">
+  <div class="sobre-grid">
+    <div class="r">
+      <div class="sec-label">Sobre Nós</div>
+      <h2 class="sec-title">UMA EMPRESA<br>FEITA PARA<br><span style="color:var(--yellow)">VOCÊ</span></h2>
+      <p class="sec-desc">A Delgado Pisos nasceu da necessidade de atender com eficiência o mercado de pisos e decoração residencial e comercial. Trabalhamos com os melhores produtos e entregamos com excelência, dedicação e pelo melhor preço.</p>
+      <div class="sobre-features">
+        <div class="sf"><div class="sf-icon">⚡</div><div class="sf-title">Resposta Rápida</div><div class="sf-desc">Orçamento em até 30 minutos após o contato.</div></div>
+        <div class="sf"><div class="sf-icon">🛠️</div><div class="sf-title">Venda + Instalação</div><div class="sf-desc">Produto e montagem em um só lugar.</div></div>
+        <div class="sf"><div class="sf-icon">📍</div><div class="sf-title">Todo o Estado SP</div><div class="sf-desc">Capital, ABC, interior e litoral.</div></div>
+        <div class="sf"><div class="sf-icon">🏆</div><div class="sf-title">Marcas Premium</div><div class="sf-desc">Durafloor, Eucafloor e referências do setor.</div></div>
+      </div>
+    </div>
+    <div class="r">
+      <div class="sobre-card">
+        <div class="sobre-logo-wrap"><img src="logo-delgado.jpeg" alt="Delgado Pisos" /></div>
+        <p class="sobre-mission">Nossa missão é transformar ambientes com <span>excelência</span> e pelo melhor preço.</p>
+        <p class="sobre-text">Operamos como empresa virtual para reduzir custos e repassar economia ao cliente. Ao receber uma solicitação, respondemos em minutos. Se necessário, visitamos o local com o mostruário completo. Atendemos no Estado de São Paulo e, eventualmente, em outros estados sob consulta.</p>
+        <div class="sobre-brands">
+          <div class="brands-lbl">Marcas oficiais</div>
+          <div class="brands-row"><span class="brand-tag">DURAFLOOR</span><span class="brand-tag">EUCAFLOOR</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section id="produtos" class="sec">
+  <div class="prod-header r">
+    <div>
+      <div class="sec-label">Nossos Produtos</div>
+      <h2 class="sec-title">O QUE<br>OFERECEMOS</h2>
+    </div>
+    <p class="sec-desc">Soluções completas para transformar qualquer ambiente residencial ou comercial.</p>
+  </div>
+  <div class="prod-grid">
+
+    <div class="prod-card r">
+      <div class="prod-img-wrap">
+        <img class="prod-img" src="piso-laminado.jpg" alt="Piso Laminado — Delgado Pisos SP" />
+        <span class="prod-num">01</span>
+      </div>
+      <div class="prod-body">
+        <h3 class="prod-title">PISO LAMINADO</h3>
+        <p class="prod-desc">Alta resistência, beleza natural e instalação rápida. Ideal para salas e quartos que buscam o visual sofisticado da madeira.</p>
+        <ul class="prod-feats">
+          <li class="prod-feat">Visual elegante de madeira</li>
+          <li class="prod-feat">Hipoalergênico e ecológico</li>
+          <li class="prod-feat">Fácil de limpar</li>
+          <li class="prod-feat">Garantia estendida</li>
+        </ul>
+        <a href="https://wa.me/5511958096136?text=Olá!%20Tenho%20interesse%20em%20Piso%20Laminado." target="_blank" class="prod-link">Solicitar orçamento →</a>
+      </div>
+    </div>
+
+    <div class="prod-card r">
+      <div class="prod-img-wrap">
+        <img class="prod-img" src="piso-vinilico.jpg" alt="Piso Vinílico — Delgado Pisos SP" />
+        <span class="prod-num">02</span>
+      </div>
+      <div class="prod-body">
+        <h3 class="prod-title">PISO VINÍLICO</h3>
+        <p class="prod-desc">Impermeável, resistente e versátil. O favorito das reformas modernas, ideal para qualquer cômodo — inclusive áreas molhadas.</p>
+        <ul class="prod-feats">
+          <li class="prod-feat">100% impermeável</li>
+          <li class="prod-feat">Resistente a riscos e impactos</li>
+          <li class="prod-feat">Ideal para pets e crianças</li>
+          <li class="prod-feat">Conforto acústico e térmico</li>
+        </ul>
+        <a href="https://wa.me/5511958096136?text=Olá!%20Tenho%20interesse%20em%20Piso%20Vinílico." target="_blank" class="prod-link">Solicitar orçamento →</a>
+      </div>
+    </div>
+
+    <div class="prod-card r">
+      <div class="prod-img-wrap">
+        <img class="prod-img" src="banner-laminado-bike.jpg" alt="Piso Laminado Ambiente — Delgado Pisos" />
+        <span class="prod-num">03</span>
+      </div>
+      <div class="prod-body">
+        <h3 class="prod-title">RODAPÉS</h3>
+        <p class="prod-desc">O detalhe que faz a diferença no acabamento. Rodapés em MDF, PVC e poliestireno para arrematar qualquer instalação com perfeição.</p>
+        <ul class="prod-feats">
+          <li class="prod-feat">MDF, PVC e Poliestireno</li>
+          <li class="prod-feat">Diversas alturas e cores</li>
+          <li class="prod-feat">Instalação profissional</li>
+        </ul>
+        <a href="https://wa.me/5511958096136?text=Olá!%20Tenho%20interesse%20em%20Rodapés." target="_blank" class="prod-link">Solicitar orçamento →</a>
+      </div>
+    </div>
+
+    <div class="prod-card r">
+      <div class="prod-img-wrap">
+        <img class="prod-img" src="persianas.jpg" alt="Persianas — Delgado Pisos SP" />
+        <span class="prod-num">04</span>
+      </div>
+      <div class="prod-body">
+        <h3 class="prod-title">PERSIANAS</h3>
+        <p class="prod-desc">Controle de luz e privacidade com beleza. Modelos vertical, horizontal, rolô, romana, stilo e painel em materiais de alta qualidade.</p>
+        <ul class="prod-feats">
+          <li class="prod-feat">Vertical, horizontal, rolô</li>
+          <li class="prod-feat">Romana, stilo e painel</li>
+          <li class="prod-feat">Materiais premium</li>
+          <li class="prod-feat">Medidas sob encomenda</li>
+        </ul>
+        <a href="https://wa.me/5511958096136?text=Olá!%20Tenho%20interesse%20em%20Persianas." target="_blank" class="prod-link">Solicitar orçamento →</a>
+      </div>
+    </div>
+
+    <div class="prod-card r">
+      <div class="prod-img-wrap">
+        <img class="prod-img" src="hero-image.jpg" alt="Revestimentos — Delgado Pisos SP" />
+        <span class="prod-num">05</span>
+      </div>
+      <div class="prod-body">
+        <h3 class="prod-title">REVESTIMENTOS</h3>
+        <p class="prod-desc">Revestimentos decorativos que transformam paredes e pisos em protagonistas do ambiente, para residências e espaços comerciais.</p>
+        <ul class="prod-feats">
+          <li class="prod-feat">Residencial e comercial</li>
+          <li class="prod-feat">Diversas texturas e cores</li>
+          <li class="prod-feat">Alta durabilidade</li>
+        </ul>
+        <a href="https://wa.me/5511958096136?text=Olá!%20Tenho%20interesse%20em%20Revestimentos." target="_blank" class="prod-link">Solicitar orçamento →</a>
+      </div>
+    </div>
+
+    <div class="prod-card prod-card-cta r">
+      <div class="prod-body" style="padding:0">
+        <div class="sec-label" style="margin-bottom:16px">Consultoria</div>
+        <h3 class="prod-title">NÃO SABE<br>QUAL ESCOLHER?</h3>
+        <p class="prod-desc" style="margin-bottom:28px">Nossa equipe oferece consultoria gratuita e personalizada para o seu projeto. Visitamos o local e apresentamos o mostruário.</p>
+        <a href="https://wa.me/5511958096136?text=Olá!%20Gostaria%20de%20uma%20consultoria%20gratuita." target="_blank" class="btn-y" style="font-size:.78rem; padding:13px 26px">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Falar com especialista
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALERIA PERSIANAS -->
+<section id="persianas-galeria" class="sec">
+  <div class="pgs-header r">
+    <div>
+      <div class="sec-label">Modelos de Persianas</div>
+      <h2 class="sec-title">NOSSA<br>GALERIA</h2>
+    </div>
+    <a href="https://wa.me/5511958096136?text=Olá!%20Gostaria%20de%20ver%20mais%20modelos%20de%20persianas." target="_blank" class="btn-o">Ver todos os modelos →</a>
+  </div>
+  <div class="pgs-grid r">
+    <div class="pgs-item" data-label="Modelo Vertical">
+      <img src="marca_persianas01.jpg" alt="Persiana Vertical — Delgado Pisos" />
+    </div>
+    <div class="pgs-item" data-label="Modelo Rolô">
+      <img src="marca_persianas02.jpg" alt="Persiana Rolô — Delgado Pisos" />
+    </div>
+    <div class="pgs-item" data-label="Modelo Romana">
+      <img src="marca_persianas03.jpg" alt="Persiana Romana — Delgado Pisos" />
+    </div>
+    <div class="pgs-item" data-label="Modelo Stilo">
+      <img src="marca_persianas04.jpg" alt="Persiana Stilo — Delgado Pisos" />
+    </div>
+    <div class="pgs-item" data-label="Modelo Painel">
+      <img src="marca_persianas05.jpg" alt="Persiana Painel — Delgado Pisos" />
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="sec">
+  <div class="r">
+    <div class="sec-label">Dúvidas Frequentes</div>
+    <h2 class="sec-title">PERGUNTAS<br>COMUNS</h2>
+    <p class="sec-desc">Respostas para ajudar você a tomar a melhor decisão na hora da reforma.</p>
+  </div>
+  <div class="faq-wrap">
+    <div class="faq-item r" onclick="faq(this)">
+      <div class="faq-q"><span class="faq-qt">Piso laminado ou vinílico: qual escolher?</span><div class="faq-ic">+</div></div>
+      <div class="faq-a">O laminado é ideal para salas e quartos com visual sofisticado de madeira e excelente custo-benefício. O vinílico é 100% impermeável, indicado para cozinhas, banheiros, lavanderias e ambientes com pets ou crianças. Nossa equipe faz a indicação certa gratuitamente.</div>
+    </div>
+    <div class="faq-item r" onclick="faq(this)">
+      <div class="faq-q"><span class="faq-qt">Qual o melhor piso para apartamento?</span><div class="faq-ic">+</div></div>
+      <div class="faq-a">Para apartamentos, o piso vinílico é muito indicado por oferecer conforto acústico, ser leve e de fácil instalação. O laminado também é ótimo para quartos e salas. Nossa equipe avalia o melhor para o seu caso.</div>
+    </div>
+    <div class="faq-item r" onclick="faq(this)">
+      <div class="faq-q"><span class="faq-qt">Qual piso é mais resistente para pets?</span><div class="faq-ic">+</div></div>
+      <div class="faq-a">O piso vinílico de alta espessura (5mm+) é a melhor opção para lares com pets. É resistente a arranhões, impermeável a acidentes e fácil de limpar. Temos modelos com camada de proteção reforçada.</div>
+    </div>
+    <div class="faq-item r" onclick="faq(this)">
+      <div class="faq-q"><span class="faq-qt">Qual piso faz menos barulho?</span><div class="faq-ic">+</div></div>
+      <div class="faq-a">O piso vinílico com manta acústica integrada é o campeão em isolamento sonoro. O laminado com espessura de 12mm também oferece boa isolação. Ambos são muito indicados para apartamentos.</div>
+    </div>
+    <div class="faq-item r" onclick="faq(this)">
+      <div class="faq-q"><span class="faq-qt">Quanto custa instalar piso em São Paulo?</span><div class="faq-ic">+</div></div>
+      <div class="faq-a">O valor varia conforme produto, metragem e complexidade do local. Trabalhamos com opções para todos os perfis — do mais acessível ao sofisticado — sempre com instalação inclusa. Solicite um orçamento gratuito e receba a resposta em até 30 minutos.</div>
+    </div>
+    <div class="faq-item r" onclick="faq(this)">
+      <div class="faq-q"><span class="faq-qt">Quanto tempo demora a instalação?</span><div class="faq-ic">+</div></div>
+      <div class="faq-a">Na maioria das instalações residenciais, o trabalho é concluído em 1 a 2 dias. Projetos maiores ou comerciais podem demandar mais tempo, sempre comunicado previamente. A instalação é rápida, limpa e sem grandes transtornos.</div>
+    </div>
+    <div class="faq-item r" onclick="faq(this)">
+      <div class="faq-q"><span class="faq-qt">Como escolher a persiana ideal?</span><div class="faq-ic">+</div></div>
+      <div class="faq-a">Depende do ambiente e da necessidade. Persianas rolô são versáteis e modernas. A romana oferece visual mais clássico. A vertical é indicada para ambientes maiores. Nossos especialistas visitam o local e indicam a melhor opção.</div>
+    </div>
+    <div class="faq-item r" onclick="faq(this)">
+      <div class="faq-q"><span class="faq-qt">Vocês atendem fora da capital?</span><div class="faq-ic">+</div></div>
+      <div class="faq-a">Sim! Atendemos em todo o Estado de São Paulo, incluindo Grande SP, ABC Paulista, Guarulhos, Osasco, Campinas, Sorocaba, São José dos Campos, interior e litoral. Entre em contato para confirmar sua região.</div>
+    </div>
+  </div>
+</section>
+
+<!-- REGIÕES -->
+<section id="regioes" class="sec">
+  <div class="r" style="text-align:center">
+    <div class="sec-label">Abrangência</div>
+    <h2 class="sec-title">ONDE<br>ATENDEMOS</h2>
+    <p class="sec-desc" style="margin:0 auto">Cobrimos todo o Estado de São Paulo. Veja as principais cidades:</p>
+  </div>
+  <div class="cidades r">
+    <span class="cidade hl">São Paulo Capital</span>
+    <span class="cidade hl">ABC Paulista</span>
+    <span class="cidade hl">Guarulhos</span>
+    <span class="cidade hl">Osasco</span>
+    <span class="cidade">Campinas</span>
+    <span class="cidade">Santo André</span>
+    <span class="cidade">São Bernardo do Campo</span>
+    <span class="cidade">São Caetano do Sul</span>
+    <span class="cidade">Diadema</span>
+    <span class="cidade">Mauá</span>
+    <span class="cidade">Ribeirão Pires</span>
+    <span class="cidade">Sorocaba</span>
+    <span class="cidade">Jundiaí</span>
+    <span class="cidade">Barueri</span>
+    <span class="cidade">Carapicuíba</span>
+    <span class="cidade">Mogi das Cruzes</span>
+    <span class="cidade">Suzano</span>
+    <span class="cidade">São José dos Campos</span>
+    <span class="cidade">Taubaté</span>
+    <span class="cidade">Santos</span>
+    <span class="cidade">São Vicente</span>
+    <span class="cidade">Praia Grande</span>
+    <span class="cidade">Ribeirão Preto</span>
+    <span class="cidade">E muito mais...</span>
+  </div>
+  <div style="text-align:center" class="r">
+    <a href="https://wa.me/5511958096136?text=Olá!%20Gostaria%20de%20verificar%20se%20vocês%20atendem%20na%20minha%20região." target="_blank" class="btn-o">Confirmar minha região →</a>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="sec">
+  <div class="r">
+    <div class="sec-label">Prova Social</div>
+    <h2 class="sec-title">O QUE NOSSOS<br>CLIENTES DIZEM</h2>
+  </div>
+  <div class="dep-grid">
+    <div class="dep-card r">
+      <div class="dep-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="dep-text">"Excelente serviço! A equipe da Delgado Pisos foi muito profissional e atenciosa. O piso laminado ficou perfeito na minha sala e o prazo de instalação foi cumprido conforme combinado."</p>
+      <div class="dep-author">
+        <div class="dep-av">MS</div>
+        <div><div class="dep-name">Maria Silva</div><div class="dep-date">Maio de 2024 · São Paulo, SP</div></div>
+      </div>
+    </div>
+    <div class="dep-card r">
+      <div class="dep-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="dep-text">"Contratei a Delgado Pisos para instalar piso vinílico no meu escritório. O resultado superou minhas expectativas! Material de qualidade e instalação impecável."</p>
+      <div class="dep-author">
+        <div class="dep-av">CM</div>
+        <div><div class="dep-name">Carlos Mendes</div><div class="dep-date">Março de 2025 · Santo André, SP</div></div>
+      </div>
+    </div>
+    <div class="dep-card r">
+      <div class="dep-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span class="e">★</span></div>
+      <p class="dep-text">"Ótimo atendimento e preço justo. As persianas que instalaram em minha casa ficaram lindas e o serviço foi muito rápido. Recomendo sem hesitar!"</p>
+      <div class="dep-author">
+        <div class="dep-av">AP</div>
+        <div><div class="dep-name">Ana Paula Santos</div><div class="dep-date">Fevereiro de 2024 · Guarulhos, SP</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="sec">
+  <div class="contato-grid">
+    <div class="r">
+      <div class="sec-label">Contato</div>
+      <h2 class="sec-title">VAMOS<br>TRANSFORMAR<br>SEU <span style="color:var(--yellow)">AMBIENTE</span></h2>
+      <p class="sec-desc">Entre em contato e receba seu orçamento gratuito em até 30 minutos. Nosso time está pronto para atender você.</p>
+      <div class="contato-channels">
+        <a href="https://wa.me/5511958096136?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" class="ch">
+          <div class="ch-icon">💬</div>
+          <div><div class="ch-lbl">WhatsApp</div><div class="ch-val">(11) 95809-6136</div></div>
+        </a>
+        <a href="https://www.instagram.com/delgadopisos/" target="_blank" class="ch">
+          <div class="ch-icon">📷</div>
+          <div><div class="ch-lbl">Instagram</div><div class="ch-val">@delgadopisos</div></div>
+        </a>
+        <div class="ch">
+          <div class="ch-icon">📍</div>
+          <div><div class="ch-lbl">Cobertura</div><div class="ch-val">Todo o Estado de São Paulo</div></div>
+        </div>
+        <div class="ch">
+          <div class="ch-icon">⏱️</div>
+          <div><div class="ch-lbl">Resposta em</div><div class="ch-val">Até 30 minutos</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-wrap r">
+      <h3 class="form-title">SOLICITE SEU ORÇAMENTO</h3>
+      <p class="form-sub">Gratuito e sem compromisso. Resposta em até 30 minutos.</p>
+      <div class="frow">
+        <div class="fg"><label for="nome">Nome</label><input type="text" id="nome" placeholder="Seu nome completo" /></div>
+        <div class="fg"><label for="tel">WhatsApp</label><input type="tel" id="tel" placeholder="(11) 99999-9999" /></div>
+      </div>
+      <div class="frow">
+        <div class="fg"><label for="email">E-mail</label><input type="email" id="email" placeholder="seu@email.com" /></div>
+        <div class="fg"><label for="cidade">Cidade</label><input type="text" id="cidade" placeholder="Sua cidade" /></div>
+      </div>
+      <div class="frow">
+        <div class="fg">
+          <label for="produto">Produto de Interesse</label>
+          <select id="produto">
+            <option value="">Selecione...</option>
+            <option>Piso Laminado</option>
+            <option>Piso Vinílico</option>
+            <option>Persianas</option>
+            <option>Rodapés</option>
+            <option>Revestimentos</option>
+            <option>Mais de um produto</option>
+          </select>
+        </div>
+        <div class="fg"><label for="m2">Metragem Aproximada</label><input type="text" id="m2" placeholder="Ex: 40m²" /></div>
+      </div>
+      <div class="fg full"><label for="msg">Mensagem (opcional)</label><textarea id="msg" placeholder="Descreva seu projeto ou dúvida..."></textarea></div>
+      <button class="form-btn" onclick="sendForm()">Enviar pelo WhatsApp →</button>
+      <p class="form-note">Ao enviar, você será redirecionado ao WhatsApp para finalizar o contato.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-grid">
+    <div>
+      <div class="ft-logo"><img src="logo-delgado.jpeg" alt="Delgado Pisos" /></div>
+      <p class="ft-desc">Especialistas em venda e instalação de pisos laminados, vinílicos, rodapés, revestimentos e persianas em todo o Estado de São Paulo.</p>
+      <div class="ft-social">
+        <a href="https://www.instagram.com/delgadopisos/" target="_blank" class="ft-soc" title="Instagram">IG</a>
+        <a href="https://wa.me/5511958096136" target="_blank" class="ft-soc" title="WhatsApp">WA</a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-col-title">Produtos</div>
+      <ul class="ft-links">
+        <li><a href="#produtos">Piso Laminado</a></li>
+        <li><a href="#produtos">Piso Vinílico</a></li>
+        <li><a href="#persianas-galeria">Persianas</a></li>
+        <li><a href="#produtos">Rodapés</a></li>
+        <li><a href="#produtos">Revestimentos</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="ft-col-title">Empresa</div>
+      <ul class="ft-links">
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#faq">Dúvidas Frequentes</a></li>
+        <li><a href="#regioes">Regiões Atendidas</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Solicitar Orçamento</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <p class="ft-copy">© 2025 Delgado Pisos. Todos os direitos reservados. Desenvolvido por <a href="https://www.instagram.com/digidelga" target="_blank">Fabiana Delgado @digidelga</a></p>
+    <p class="ft-copy">WhatsApp: <a href="https://wa.me/5511958096136">(11) 95809-6136</a></p>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/5511958096136?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20pela%20Delgado%20Pisos." target="_blank" class="wa-float">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  Orçamento Grátis
+</a>
+
+<script>
+  // Mobile nav
+  function toggleMenu() {
+    document.getElementById('mobNav').classList.toggle('open');
+  }
+
+  // Scroll reveal
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('on'), i * 70);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
+  document.querySelectorAll('.r').forEach(el => obs.observe(el));
+
+  // FAQ
+  function faq(el) {
+    const open = el.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!open) el.classList.add('open');
+  }
+
+  // Nav scroll
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').style.background =
+      window.scrollY > 60 ? 'rgba(9,9,9,.99)' : 'rgba(9,9,9,.93)';
+  });
+
+  // Form → WhatsApp
+  function sendForm() {
+    const nome    = document.getElementById('nome').value.trim();
+    const tel     = document.getElementById('tel').value.trim();
+    const email   = document.getElementById('email').value.trim();
+    const cidade  = document.getElementById('cidade').value.trim();
+    const produto = document.getElementById('produto').value;
+    const m2      = document.getElementById('m2').value.trim();
+    const msg     = document.getElementById('msg').value.trim();
+
+    if (!nome || !tel || !produto) {
+      alert('Por favor, preencha Nome, WhatsApp e Produto de interesse.');
+      return;
+    }
+
+    const texto = `Olá! Gostaria de solicitar um orçamento.\n\n*Nome:* ${nome}\n*WhatsApp:* ${tel}${email ? '\n*E-mail:* ' + email : ''}\n*Cidade:* ${cidade || 'Não informado'}\n*Produto:* ${produto}${m2 ? '\n*Metragem:* ' + m2 : ''}${msg ? '\n*Mensagem:* ' + msg : ''}`;
+
+    window.open('https://wa.me/5511958096136?text=' + encodeURIComponent(texto), '_blank');
+  }
+</script>
+
+<!-- Schema LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Delgado Pisos",
+  "image": "https://delgadopisos.com.br/logo-delgado.jpeg",
+  "url": "https://delgadopisos.com.br/",
+  "telephone": "+5511958096136",
+  "priceRange": "$$",
+  "description": "Venda e instalação de pisos laminados, vinílicos, persianas e revestimentos de alta qualidade em São Paulo.",
+  "areaServed": { "@type": "State", "name": "São Paulo" },
+  "serviceType": ["Instalação de Pisos Laminados","Instalação de Pisos Vinílicos","Instalação de Persianas","Instalação de Rodapés","Instalação de Revestimentos"],
+  "sameAs": ["https://www.instagram.com/delgadopisos/"]
+}
+</script>
+
+<!-- Schema Reviews -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Delgado Pisos",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "27",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    { "@type": "Review", "author": { "@type": "Person", "name": "Maria Silva" }, "datePublished": "2024-05-15", "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Excelente serviço! A equipe da Delgado Pisos foi muito profissional e atenciosa." },
+    { "@type": "Review", "author": { "@type": "Person", "name": "Carlos Mendes" }, "datePublished": "2025-03-22", "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Contratei para instalar piso vinílico no meu escritório. O resultado superou minhas expectativas!" },
+    { "@type": "Review", "author": { "@type": "Person", "name": "Ana Paula Santos" }, "datePublished": "2024-02-10", "reviewRating": { "@type": "Rating", "ratingValue": "4" }, "reviewBody": "Ótimo atendimento e preço justo. As persianas ficaram lindas e o serviço foi rápido." }
+  ]
+}
+</script>
+
+<!-- Schema Breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://delgadopisos.com.br/" }
+  ]
+}
+</script>
+
+</body>
+</html>
